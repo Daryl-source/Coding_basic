@@ -17,12 +17,10 @@ class Solution(object):
         node_dict = {}
         current_node = head
         index = 0
-        while (current_node):
+        while current_node:
             if current_node in node_dict:
                 return current_node
             node_dict[current_node] = index
             current_node = current_node.next
             index += 1
         return None
-
-
